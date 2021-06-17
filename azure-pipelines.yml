@@ -22,4 +22,5 @@ steps:
     npm test
   displayName: 'npm install and build'
 
-- script: echo 'Hello SPidy'
+- script: |
+   echo 'Hello SPidy'
