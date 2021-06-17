@@ -34,7 +34,7 @@ steps:
 
 # Python script
 # Run a Python file or inline script
-- task: PythonScript@0232
+- task: PythonScript@0
   displayName: 'Run Python Script'
   inputs:
     scriptSource: 'filePath' # Options: filePath, inline
