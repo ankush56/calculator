@@ -13,13 +13,9 @@ steps:
 
 - task: Bash@3
   displayName: 'Run Scripts'
-  inputs: |
+  inputs: 
     targetType: 'filePath' # Optional. Options: filePath, inline
     filePath: 'myScripts/script1.sh'
-
-    targetType: 'filePath' # Optional. Options: filePath, inline
-    filePath: 'myScripts/script2.sh'
-
 
 - task: NodeTool@0
   inputs:
