@@ -11,12 +11,6 @@ pool:
 
 steps:
 
-- task: Bash@3
-  displayName: 'Running random Shell script'
-  inputs:
-    targetType: 'inline' # Optional. Options: filePath, inline
-    script: 'echo hello Superman'
-
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -27,3 +21,7 @@ steps:
     npm run build
     npm test
   displayName: 'npm install and build'
+
+- script: |
+  displayName: 'Spiderman Shell scripts test'
+    script: 'echo hello Spidy'
