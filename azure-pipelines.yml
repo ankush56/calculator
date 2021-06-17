@@ -11,6 +11,10 @@ pool:
 
 steps:
 
+- script: |
+    sh script1.sh 
+  displayName: Run multiple bash scripts
+  
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -23,12 +27,9 @@ steps:
   displayName: 'npm install and build'
 
 - script: 
-  displayName: Hello spidy 
    echo 'Hello SPidy'
+  displayName: Hello spidy 
 
-- script: |
-    script1.sh 
-  displayName: Run multiple bash scripts
    
 
 
