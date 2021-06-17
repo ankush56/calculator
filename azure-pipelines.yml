@@ -48,8 +48,6 @@ steps:
   inputs:
      command: publish
      publishRegistry: useFeed
-     publishFeed: Integrating External Source Control with Azure Pipelines/feed1
-
-   
+     publishFeed: https://pkgs.dev.azure.com/AnkushOrganization/_packaging/feed1/npm/registry/
 
 
