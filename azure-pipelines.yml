@@ -16,12 +16,19 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: 
+- script: |
     npm install
     npm run build
     npm test
   displayName: 'npm install and build'
 
 - script: 
-   echo 'Hello SPidy'
   displayName: Hello spidy 
+   echo 'Hello SPidy'
+
+- script: |
+    script1.sh 
+  displayName: Run multiple bash scripts
+   
+
+
