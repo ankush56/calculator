@@ -40,7 +40,14 @@ steps:
     scriptSource: 'filePath' # Options: filePath, inline
     scriptPath: myScripts/pythonScript.py
     #script: # Required when scriptSource == inline
- 
+
+#Publish test
+- task: Npm@1
+  displayName: 'Publish to feed'
+  inputs:
+     command: publish
+     publishRegistry: feed1
+     publishFeed: https://pkgs.dev.azure.com/AnkushOrganization/_packaging/feed1/npm/registry/ 
 
    
 
