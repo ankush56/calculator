@@ -11,11 +11,13 @@ pool:
 
 steps:
 
-- script: |
-    sh myScripts/script1.sh 
-    sh myScripts/script2.sh
-    sh myScripts/script3.sh  
-  displayName: Run multiple bash scripts
+- task: Bash@3
+  displayName: 'Run Scripts'
+  inputs:
+    targetType: 'filePath' # Optional. Options: filePath, inline
+    filePath: 'myScripts/script1.sh'
+    filePath: 'myScripts/script2.sh'
+    filePath: 'myScripts/script3.sh'
 
 - task: NodeTool@0
   inputs:
