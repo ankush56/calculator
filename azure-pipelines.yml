@@ -15,9 +15,7 @@ steps:
   displayName: 'Run Scripts'
   inputs:
     targetType: 'filePath' # Optional. Options: filePath, inline
-    filePath: 'myScripts/script1.sh'
-    targetType: 'filePath' # Optional. Options: filePath, inline
-    filePath: 'myScripts/script2.sh'
+    filePath: 'myScripts/script1.sh, myScripts/script2.sh'
 
 
 - task: NodeTool@0
