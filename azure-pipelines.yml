@@ -32,6 +32,16 @@ steps:
    echo 'Hello SPidy'
   displayName: Hello spidy 
 
+# Python script
+# Run a Python file or inline script
+- task: PythonScript@0232
+  displayName: 'Run Python Script'
+  inputs:
+    scriptSource: 'filePath' # Options: filePath, inline
+    scriptPath: myScripts/pythonScript.py
+    #script: # Required when scriptSource == inline
+ 
+
    
 
 
