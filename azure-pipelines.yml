@@ -12,9 +12,11 @@ pool:
 steps:
 
 - script: |
-    sh script1.sh 
+    sh myScripts/script1.sh 
+    sh myScripts/script2.sh
+    sh myScripts/script3.sh  
   displayName: Run multiple bash scripts
-  
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
