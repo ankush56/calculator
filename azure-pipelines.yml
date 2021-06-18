@@ -41,7 +41,7 @@ steps:
     scriptPath: myScripts/pythonScript.py
     #script: # Required when scriptSource == inline
 
-#Publish tests
+#Publish test
 - task: Npm@1
   inputs:
     command: 'publish'
