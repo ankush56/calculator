@@ -42,12 +42,9 @@ steps:
     #script: # Required when scriptSource == inline
 
 #Publish test
-
 - task: Npm@1
-  displayName: 'Publish to feed'
   inputs:
-     command: publish
-     publishRegistry: useFeed
-     publishFeed: https://pkgs.dev.azure.com/AnkushOrganization/_packaging/feed1/npm/registry/
-
-
+    command: 'publish'
+    verbose: true
+    publishRegistry: 'useFeed'
+    publishFeed: '02b60a18-37ec-4180-a722-48a7f927f4f9'
