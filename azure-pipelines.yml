@@ -48,7 +48,7 @@ steps:
     publishRegistry: 'useFeed'
     publishFeed: 'feed1'
 
-#Download Artifact
+#Download Artifacts
 - task: DownloadPackage@1
   inputs:
     packageType: 'npm'
